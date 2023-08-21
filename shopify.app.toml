@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "checkout optimize project"
+client_id = "fdbd634a50a4e1a8540759b9b9d27435"
+application_url = "https://re-grey-teach-switching.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+use_legacy_install_flow = true
+
+[auth]
+redirect_urls = [
+  "https://re-grey-teach-switching.trycloudflare.com/auth/callback",
+  "https://re-grey-teach-switching.trycloudflare.com/auth/shopify/callback",
+  "https://re-grey-teach-switching.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "pizpiretadevcheckout.myshopify.com"
